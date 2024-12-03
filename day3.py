@@ -1,3 +1,5 @@
+## DAY 3: PART 1
+
 def solve(line):
   status = 0 ## 0 = no command, 1 = first num, 2 = second num, 3 = done
   command = ""
