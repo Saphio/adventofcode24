@@ -1,3 +1,5 @@
+## DAY 2: PART 1
+
 def safe (report):
     if (len(report) < 2): return True
     if (report[1] - report[0] < 0): ## decreasing
@@ -14,13 +16,17 @@ def safe (report):
                 return False
     return True
 
+f = open("./AdventOfCode/day2.txt", "r")
+
 reports = []
-line = input()
+line = f.readline()
 count = 0
 while (line != ""):
     report = [int(i) for i in line.split()]
     if (safe(report)):
         count += 1
-    line = input()
+    line = f.readline()
     
+f.close()
+
 print(count)
