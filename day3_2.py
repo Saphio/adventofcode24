@@ -1,7 +1,8 @@
 ## DAY 3: PART 2
 
 def solve(line, e):
-  status = 0 ## 0 = no command, 1 = first num, 2 = second num, 3 = done
+  status = 0
+  ## 0 = no command, 1 = first num, 2 = second num, 3 = done
   enabled = e
   command = ""
   a = ""
